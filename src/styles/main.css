@@ -18,7 +18,7 @@ body {
  
 .app-bar {
   padding: 8px 16px;
-  background-color: white;
+  background-color: #5aed64;
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 10px;
@@ -31,6 +31,7 @@ body {
 .app-bar .app-bar__menu {
   display: flex;
   align-items: center;
+  min-height: 44px;
 }
  
 .app-bar .app-bar__menu button {
@@ -39,6 +40,7 @@ body {
   font-size: 18px;
   padding: 8px;
   cursor: pointer;
+  min-height: 44px;
 }
  
 .app-bar .app-bar__brand {
@@ -51,6 +53,8 @@ body {
   text-transform: uppercase;
   font-size: 22px;
   user-select: none;
+  min-height: 44px;
+  padding-top: 10px;
 }
  
 .app-bar .app-bar__navigation {
@@ -59,9 +63,20 @@ body {
   left: -180px;
   width: 150px;
   transition: all 0.3s;
-  padding: 8px;
-  background-color: white;
+  background-color: #5aed64;
   overflow: hidden;
+}
+
+.app-bar .app-bar__navigation ul{
+  min-height: 44px;
+}
+
+.app-bar .app-bar__navigation li{
+  min-height: 44px;
+}
+
+.app-bar .app-bar__navigation ul li{
+  padding-top: 20px;
 }
  
 .app-bar .app-bar__navigation.open {
@@ -73,8 +88,15 @@ body {
   text-decoration: none;
   color: black;
   padding: 8px;
-  margin-bottom: 5px;
+  text-align: center;
+  margin: 0 auto;
   width: 100%;
+  min-height: 44px;
+}
+
+.app-bar .app-bar__navigation ul li a:hover{
+  font-weight: bold;
+  color: white;
 }
 
 /* Hero */
@@ -176,6 +198,7 @@ main {
  
 .restaurant-item .restaurant-item__content h3 {
   margin: 0 0 10px 0;
+  min-height: 44px;
 }
  
 .restaurant-item .restaurant-item__content h3 a {

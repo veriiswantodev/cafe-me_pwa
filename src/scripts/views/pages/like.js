@@ -11,18 +11,17 @@ const Like = {
       </div>
     </div>
  `;
- 
   },
- 
+
   async afterRender() {
     const restaurants = await FavoriteRestaurantIdb.getAllRestaurants();
     const restaurantsContainer = document.querySelector('#restaurants');
-    console.log(restaurants);
 
-    restaurants.forEach((restaurants) =>{
+    // eslint-disable-next-line no-shadow
+    restaurants.forEach((restaurants) => {
       restaurantsContainer.innerHTML += createRestaurantItemTemplate(restaurants);
-    })
+    });
   },
 };
- 
+
 export default Like;

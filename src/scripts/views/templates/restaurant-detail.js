@@ -6,8 +6,7 @@ const createRestaurantCategoriesTemplate = (categories) => {
     htmlTemplate += createRestaurantCategoryDetail(category);
   });
   return htmlTemplate;
-}
-
+};
 
 const createRestaurantMenuTemplate = (menu) => `
 <li>${menu.name}</li>

@@ -6,5 +6,5 @@ const CONFIG = {
   DATABASE_VERSION: 1,
   OBJECT_STORE_NAME: 'restaurant',
 };
- 
+
 export default CONFIG;
