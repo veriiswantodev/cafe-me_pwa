@@ -12,5 +12,7 @@ self.addEventListener('activate', (event) => {
 });
  
 self.addEventListener('fetch', (event) => {
+  if (!(event.request.url.indexOf('https') === 0)) return; // skip the request. if request is not made with http protocol
+
   event.respondWith(CacheHelper.revalidateCache(event.request));
 });

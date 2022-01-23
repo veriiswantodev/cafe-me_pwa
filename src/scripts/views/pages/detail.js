@@ -19,6 +19,7 @@ const Detail = {
     const restaurantContainer = document.querySelector('#restaurant');
     restaurantContainer.innerHTML = createRestaurantDetailTemplate(restaurant);
 
+
     LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
       favoriteRestaurant: FavoriteRestaurantIdb,

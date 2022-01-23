@@ -76,6 +76,35 @@ body {
   margin-bottom: 5px;
   width: 100%;
 }
+
+/* Hero */
+
+#hero {
+  background-image: url('/images/heros/hero.jpg');
+  width: 100%;
+  min-height: 300px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#hero h1{
+  color: white;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+/* @media screen and (max-width: 600px) {
+  #hero {
+      background-image: url('/images/hero-small.jpg');
+  }
+} */
+
  
 /*
   Main Content
