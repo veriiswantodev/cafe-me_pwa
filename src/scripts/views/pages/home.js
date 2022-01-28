@@ -4,7 +4,7 @@ import { createRestaurantItemTemplate } from '../templates/template-createor';
 const Home = {
   async render() {
     return `
-    <div class="content">
+    <div class="content" tabindex="0">
       <h2 class="content__heading">Daftar Restaurant</h2>
       <div id="restaurants" class="restaurants">
       

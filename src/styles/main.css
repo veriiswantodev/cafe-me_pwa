@@ -265,6 +265,14 @@ h2.restaurant__name {
 .restaurant .restaurant__info h4 {
   margin: 8px 0;
 }
+
+.restaurant .restaurant__info span {
+  background: #9bf0a5;
+  border-radius: 6px;
+  bottom: 100%;
+  padding: 4px 8px;
+}
+
  
  
  
@@ -305,4 +313,24 @@ footer p a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+.skeleton {
+  user-select: none;
+  background-color: #eeeeee;
+  color: #eeeeee;
+}
+
+/*
+ Search
+*/
+
+#query {
+  border-radius: 10px;
+  margin: 10px auto;
+  display: block;
+  width: 50%;
+  height: 25px;
+  padding: 0 10px;   
 }
